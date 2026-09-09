@@ -8,7 +8,7 @@ def tipo_usuario(nombre):
     return usuarios[nombre]["tipo"]
 
 def registrar_usuario():
-    nombre=input("Ingrese el nombre de ususario: ")
+    nombre=input("Ingrese el nombre de usuario: ")
     if nombre in usuarios:
        print("Ese usuario ya existe")
        return
@@ -36,12 +36,12 @@ def modificar_usuario():
     if nombre not in usuarios:
         print("El usuario no existe")
 
-    nueva_contraseña=input("Ingrese la nuevacontraseña: ")
+    nueva_contraseña=input("Ingrese la nueva contraseña: ")
     usuarios[nombre]["contraseña"]=nueva_contraseña
     print("Contraseña actualizada")
 
 def eliminar_usuario():
-    nombre=input("Ingree el usaurio a eliminar: ")
+    nombre=input("Ingrese el usuario a eliminar: ")
     if nombre in usuarios:
         del usuarios[nombre]
         print("Usuario eliminado")

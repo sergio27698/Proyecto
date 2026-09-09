@@ -5,9 +5,9 @@ def menu_administrador():
         print("\n---MENU DEL ADMINISTRADOR---")
         print("1.- Registrar usuario")
         print("2.- Mostrar usuario")
-        print("3.- Busacar usuario")
+        print("3.- Buscar usuario")
         print("4.- Modificar usuario")
-        print("5.- Eleminiar usario")
+        print("5.- Eliminar usario")
         print("6.- Cerrar sesion")
         opcion=input("Elija una opcion: ")
 
