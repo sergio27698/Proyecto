@@ -5,7 +5,10 @@ def ver_credenciales(nombre,contraseña):
     return False
 
 def tipo_usuario(nombre):
-    return usuarios[nombre]["tipo"]
+    try:
+        return usuarios[nombre]["tipo"]
+    except KeyError:
+        return None
 
 def registrar_usuario():
     nombre=input("Ingrese el nombre de usuario: ")
@@ -35,6 +38,7 @@ def modificar_usuario():
     nombre=input("Ingrese el usuario a modificar: ")
     if nombre not in usuarios:
         print("El usuario no existe")
+        return
 
     nueva_contraseña=input("Ingrese la nueva contraseña: ")
     usuarios[nombre]["contraseña"]=nueva_contraseña
